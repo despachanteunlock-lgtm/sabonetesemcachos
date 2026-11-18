@@ -252,7 +252,9 @@
         <a href="#duvidas">Dúvidas</a>
       </div>
 
-      <a class="button small checkout" href="#oferta">Quero aprender</a>
+      <a class="button small checkout" href="https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C">
+        Quero aprender
+      </a>
     </div>
   </nav>
 
@@ -274,7 +276,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button arrow checkout" href="#oferta">
+            <a class="button arrow checkout" href="https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C">
               Quero criar meus sabonetes
             </a>
 
@@ -342,7 +344,7 @@
             <span class="vsl-point">Guia digital acessível pelo celular</span>
           </div>
 
-          <a class="button light arrow checkout" href="#oferta">
+          <a class="button light arrow checkout" href="https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C">
             Quero acessar o guia
           </a>
         </div>
@@ -465,7 +467,9 @@
 
     <section class="collection" id="modelos">
       <div class="wrap">
-        <p class="section-kicker" style="color:#8b5994">Três versões no mesmo guia</p>
+        <p class="section-kicker" style="color:#8b5994">
+          Três versões no mesmo guia
+        </p>
 
         <h2 class="serif">
           Monte uma coleção que dá vontade de presentear.
@@ -514,7 +518,7 @@
           </article>
         </div>
 
-        <a class="button arrow checkout" href="#oferta" style="margin-top:34px">
+        <a class="button arrow checkout" href="https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C" style="margin-top:34px">
           Quero acessar o guia
         </a>
       </div>
@@ -610,7 +614,7 @@
             </button>
 
             <div class="faq-a">
-              Após a confirmação do pagamento, o acesso ao conteúdo deve ser enviado pela plataforma de checkout que você configurar.
+              Após a confirmação do pagamento, você receberá as instruções de acesso ao conteúdo pela plataforma de pagamento.
             </div>
           </div>
         </div>
@@ -632,7 +636,7 @@
             Acesse o guia por R$ 24,90, organize os materiais e produza suas três versões.
           </p>
 
-          <a class="button arrow checkout" href="#oferta">
+          <a class="button arrow checkout" href="https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C">
             Quero começar por R$ 24,90
           </a>
 
@@ -655,15 +659,15 @@
     </div>
   </footer>
 
-  <a class="button mobile-cta checkout" href="#oferta">
+  <a class="button mobile-cta checkout" href="https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C">
     Quero o guia · R$ 24,90
   </a>
 
   <div class="toast" role="status" aria-live="polite"></div>
 
   <script>
-    /* COLE O LINK DA SUA KIWIFY, HOTMART OU BRAIP AQUI */
-    const CHECKOUT_URL = "COLE_SEU_LINK_DE_CHECKOUT_AQUI";
+    /* Link de pagamento */
+    const CHECKOUT_URL = "https://checkoutseguro.info/checkout/cms3ug2io042r01ojl15efa4w?offer=GM2AG4C";
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -684,32 +688,8 @@
       });
     });
 
-    const toast = document.querySelector(".toast");
-    let toastTimer;
-
-    function showToast(message) {
-      toast.textContent = message;
-      toast.classList.add("show");
-
-      clearTimeout(toastTimer);
-
-      toastTimer = setTimeout(() => {
-        toast.classList.remove("show");
-      }, 4200);
-    }
-
     document.querySelectorAll(".checkout").forEach(link => {
-      link.addEventListener("click", event => {
-        if (CHECKOUT_URL.startsWith("COLE_")) {
-          event.preventDefault();
-
-          showToast(
-            "Antes de publicar, troque CHECKOUT_URL no final do arquivo pelo link do seu checkout."
-          );
-        } else {
-          link.href = CHECKOUT_URL;
-        }
-      });
+      link.href = CHECKOUT_URL;
     });
   </script>
 </body>
